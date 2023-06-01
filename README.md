@@ -2,7 +2,7 @@
  Angular Tutorial: Your first Angular App (with minor modifications)
  [Tutorial page:](https://angular.io/tutorial/first-app)
 Simple web app which displays houses- one can filter according the city.
-![Screenshot of Web App](ReadMeImg/shot1.jpg)
+![Screenshot of Web App](ReadMeImg/shot1.JPG)
 
 
  # Topics
