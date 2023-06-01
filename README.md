@@ -12,7 +12,7 @@ Simple web app which displays houses- one can filter according the city.
  - How property binding works
  - How to pass data to components and how to interpolate values into a template
  - Using the ngFor directive
- - Creating a Service and dependency injection
+ - Creating a service and dependency injection
  - Routing
  - Add a form using Angular's forms feature
  - Connect the data captured in the form to a form using an event handler
