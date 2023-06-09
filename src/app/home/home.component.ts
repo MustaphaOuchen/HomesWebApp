@@ -1,4 +1,4 @@
-import { Component,inject } from '@angular/core'; //inject for dependency injection
+import { Component,OnInit,inject } from '@angular/core'; //inject for dependency injection
 import { CommonModule } from '@angular/common';
 
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
@@ -24,7 +24,7 @@ import { HousingService } from '../housing.service';
   `,
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   //Testobject
   /*
@@ -46,12 +46,19 @@ export class HomeComponent {
   constructor() {
     //this.housingLocationList = this.housingService.getAllHousingLocations();
     //this.filteredLocationList = this.housingLocationList;
+
+  
+  }
+  ngOnInit(): void {
     this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
       this.housingLocationList = housingLocationList;
       this.filteredLocationList = housingLocationList;
     });
-  
   }
+
+
+
+
 
   filterResults(text: string) {
     if (!text) {
